@@ -7,10 +7,9 @@ public class UiCutSceneManager : Manager<UiCutSceneManager> {
 
     private GameObject _textBox;    
     private int _currentText = 0;
-    private bool _isInCutScene = true;
+    private bool _isInCutScene = false;
 
     void Start() {
-        _isInCutScene = true;
         _textBox = UiManager.Instance.textBox;
     }
 
@@ -61,6 +60,14 @@ public class UiCutSceneManager : Manager<UiCutSceneManager> {
                 print("Not suppose to happen");
                 break;
         }
+    }
+
+    private void StartCutScene() {
+        _isInCutScene = true;
+    }
+
+    private void EndCutScene() {
+        _isInCutScene = false;
     }
 
 }
