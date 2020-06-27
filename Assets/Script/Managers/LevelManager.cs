@@ -48,10 +48,6 @@ public class LevelManager : Manager<LevelManager> {
         SceneManager.LoadScene(level);
     }
 
-    public void Quit() {
-        Application.Quit();
-    }
-
 
     
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LoseManager : Manager<LoseManager> {
     
@@ -28,6 +29,15 @@ public class LoseManager : Manager<LoseManager> {
         yield return new WaitForSeconds(1);
         _loseMenu.SetActive(true);
         _loseMenu.GetComponent<Animator>().SetTrigger("Reappear");
+    }
+
+    public void Restart() {
+        LevelManager.Instance.FadeToLevel(SceneManager.GetActiveScene().buildIndex);
+        _loseMenu.GetComponent<Animator>().SetTrigger("Disappear");
+    }
+
+    public void Quit() {
+        Application.Quit();
     }
 
 }
