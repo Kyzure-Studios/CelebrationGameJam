@@ -44,7 +44,6 @@ public class PlayerController : MonoBehaviour
 
 	public void Attack()
 	{
-		// Play an attack animation
 		animator.SetTrigger("Attack");
 		StartCoroutine(AttackDuration());
 
@@ -60,7 +59,8 @@ public class PlayerController : MonoBehaviour
 	// TODO REMOVE MAGIC NO
 	IEnumerator AttackDuration()
 	{
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(0.2f);
+		animator.SetTrigger("AttackEnd");
 		currentState = PlayerState.Walk;
 	}
 
@@ -76,6 +76,7 @@ public class PlayerController : MonoBehaviour
 
 	public void Jump()
 	{
+		animator.SetTrigger("Jump");
 		gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
 	}
 
@@ -95,6 +96,7 @@ public class PlayerController : MonoBehaviour
 
 	public void Walk(Vector3 movement)
 	{
+		animator.SetTrigger("JumpEnd");
 		transform.position += movement * Time.deltaTime * moveSpeed;
 		// If movement left and facing right
 		if (movement.x < 0f && transform.localScale.x < 0) {
