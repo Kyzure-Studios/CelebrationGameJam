@@ -5,24 +5,17 @@ using TMPro;
 
 public class UiCutSceneManager : Manager<UiCutSceneManager> {
 
-    private GameObject _textBox;
-    private TextMeshProUGUI _text;
-    
+    private GameObject _textBox;    
     private int _currentText = 0;
     private bool _isInCutScene = true;
 
     void Start() {
         _isInCutScene = true;
-        _textBox = UiManager.Instance._textBox;
-        _text = _textBox.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
-
+        _textBox = UiManager.Instance.textBox;
     }
 
     void Update() {
         if (_isInCutScene) {
-            if (!_textBox.activeSelf) {
-                _textBox.SetActive(true);
-            }
             if (Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.Space)) {
                 GoNextText();
             }
@@ -38,10 +31,36 @@ public class UiCutSceneManager : Manager<UiCutSceneManager> {
             _textBox.SetActive(false);
             _currentText++;
         } else {
-            _text.text = CutSceneDictionary.textDictionary[_currentText].text;
+            ChangeText(CutSceneDictionary.textDictionary[_currentText].name, 
+                    CutSceneDictionary.textDictionary[_currentText].text);       
             _currentText++;
         }
-        
+    }
+
+    private void ChangeText(string name, string text) {
+        switch (name) {
+            case "Bell":
+                _textBox.transform.GetChild(0).gameObject.SetActive(true);
+                _textBox.transform.GetChild(1).gameObject.SetActive(false);
+                _textBox.transform.GetChild(2).gameObject.SetActive(false);
+                _textBox.transform.GetChild(0).GetChild(1).GetComponent<TextMeshProUGUI>().text = text;
+                break;
+            case "Drunk Santa":
+                _textBox.transform.GetChild(0).gameObject.SetActive(false);
+                _textBox.transform.GetChild(1).gameObject.SetActive(true);
+                _textBox.transform.GetChild(2).gameObject.SetActive(false);
+                _textBox.transform.GetChild(1).GetChild(1).GetComponent<TextMeshProUGUI>().text = text;
+                break;
+            case "Parents":
+                _textBox.transform.GetChild(0).gameObject.SetActive(false);
+                _textBox.transform.GetChild(1).gameObject.SetActive(false);
+                _textBox.transform.GetChild(2).gameObject.SetActive(true);                
+                _textBox.transform.GetChild(2).GetChild(1).GetComponent<TextMeshProUGUI>().text = text;
+                break;
+            default:
+                print("Not suppose to happen");
+                break;
+        }
     }
 
 }
