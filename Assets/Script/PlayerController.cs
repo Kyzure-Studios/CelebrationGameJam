@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 	public Animator animator;
 
-	public enum PlayerState{Dead, Attack, Jump, Walk};
+	public enum PlayerState { Dead, Attack, Jump, Walk };
 	public PlayerState currentState;
 
 	// Stats
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
 	}
 
 	// Update is called once per frame
-	void Update(){}
+	void Update() {}
 
 	public void PressAttack()
 	{
@@ -46,15 +46,21 @@ public class PlayerController : MonoBehaviour
 	{
 		// Play an attack animation
 		animator.SetTrigger("Attack");
+		StartCoroutine(AttackDuration());
 
 		Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
-		foreach(Collider2D enemy in hitEnemies)
+		foreach (Collider2D enemy in hitEnemies)
 		{
 			enemy.GetComponent<EnemyController>().TakeDamage(attackDamage);
 			Debug.Log("We hit " + enemy.name);
 		}
+	}
 
+	// TODO REMOVE MAGIC NO
+	IEnumerator AttackDuration()
+	{
+		yield return new WaitForSeconds(0.5f);
 		currentState = PlayerState.Walk;
 	}
 
@@ -90,6 +96,14 @@ public class PlayerController : MonoBehaviour
 	public void Walk(Vector3 movement)
 	{
 		transform.position += movement * Time.deltaTime * moveSpeed;
+		// If movement left and facing right
+		if (movement.x < 0f && transform.localScale.x < 0) {
+			transform.localScale = new Vector3(2f, 2f, 2f);
+		}
+		// If movement right and facing left
+		if (movement.x > 0f && transform.localScale.x > 0) {
+			transform.localScale = new Vector3(-2f, 2f, 2f);
+		}
 	}
 
 
