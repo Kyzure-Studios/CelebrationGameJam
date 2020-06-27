@@ -22,6 +22,7 @@ public class Grounded : MonoBehaviour
 	{
 		if (collision.collider.tag == "Ground")
 		{
+			Player.GetComponent<Animator>().SetTrigger("JumpEnd");
 			Player.GetComponent<PlayerController>().isGrounded = true;
 		}
 	}
