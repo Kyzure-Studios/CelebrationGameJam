@@ -40,5 +40,10 @@ public class InputManager : Manager<InputManager>
 		Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
 		_playerController.PressWalk(movement);
 
+		if (Input.GetKeyDown(KeyCode.Escape)) {
+			print("yeet");
+			PauseManager.Instance.Pause();
+		}
+
 	}
 }

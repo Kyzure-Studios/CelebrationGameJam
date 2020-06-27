@@ -741,8 +741,6 @@ MonoBehaviour:
     m_Bits: 256
   attackRange: 0.35
   attackDamage: 5
-  attackCooldown: 12
-  attackDuration: 12
 --- !u!50 &1412256714
 Rigidbody2D:
   serializedVersion: 4
