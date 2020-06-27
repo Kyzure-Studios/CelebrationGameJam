@@ -12,7 +12,7 @@ public class InputManager : Manager<InputManager>
 	// Start is called before the first frame update
 	void Start()
 	{
-		_player = GameObject.Find("Player");
+		_player = GameObject.Find("Bel");
 		_playerController = _player.GetComponent<PlayerController>();
 	}
 

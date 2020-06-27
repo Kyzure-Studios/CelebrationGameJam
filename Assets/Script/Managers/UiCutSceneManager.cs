@@ -38,7 +38,7 @@ public class UiCutSceneManager : Manager<UiCutSceneManager> {
 
     private void ChangeText(string name, string text) {
         switch (name) {
-            case "Bell":
+            case "Bel":
                 _textBox.transform.GetChild(0).gameObject.SetActive(true);
                 _textBox.transform.GetChild(1).gameObject.SetActive(false);
                 _textBox.transform.GetChild(2).gameObject.SetActive(false);

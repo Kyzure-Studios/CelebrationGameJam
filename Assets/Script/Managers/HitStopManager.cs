@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HitStopManager : MonoBehaviour
+public class HitStopManager : Manager<HitStopManager>
 {
+  public GameObject hitSparkPrefab;
 	public bool timeStop;
 
     // Start is called before the first frame update
@@ -16,5 +17,11 @@ public class HitStopManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void PlayHitSpark(Transform location) 
+    {
+      GameObject hitSpark = Object.Instantiate(hitSparkPrefab, location);
+      hitSpark.transform.position = location.position;
     }
 }

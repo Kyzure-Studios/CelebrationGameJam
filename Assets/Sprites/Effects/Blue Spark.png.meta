@@ -1,0 +1,443 @@
+fileFormatVersion: 2
+guid: 57a816db4bec666498b4ec617f9db8d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1823301846293342357
+    second: Blue Spark_0
+  - first:
+      213: 5209596235851922056
+    second: Blue Spark_1
+  - first:
+      213: 5764032382324112071
+    second: Blue Spark_2
+  - first:
+      213: 2616554152813858848
+    second: Blue Spark_3
+  - first:
+      213: -5002847502015001188
+    second: Blue Spark_4
+  - first:
+      213: -6689524741248780353
+    second: Blue Spark_5
+  - first:
+      213: -3064161629871492812
+    second: Blue Spark_6
+  - first:
+      213: 4092304493704309179
+    second: Blue Spark_7
+  - first:
+      213: 139580235409626546
+    second: Blue Spark_8
+  - first:
+      213: -6085296346532699709
+    second: Blue Spark_9
+  - first:
+      213: 8870830502578298791
+    second: Blue Spark_10
+  - first:
+      213: -7572012936210167837
+    second: Blue Spark_11
+  - first:
+      213: 3048895137711923775
+    second: Blue Spark_12
+  - first:
+      213: 4696105824640443920
+    second: Blue Spark_13
+  - first:
+      213: 3812981169647011524
+    second: Blue Spark_14
+  - first:
+      213: 6012696681140186898
+    second: Blue Spark_15
+  - first:
+      213: 8529465258857251551
+    second: Blue Spark_16
+  - first:
+      213: 4644981652876262989
+    second: Blue Spark_17
+  - first:
+      213: 3034067801017985650
+    second: Blue Spark_18
+  - first:
+      213: 7844718993002171396
+    second: Blue Spark_19
+  - first:
+      213: 8349639987143531029
+    second: Blue Spark_20
+  - first:
+      213: -4532894162287930456
+    second: Blue Spark_21
+  - first:
+      213: 253473669436642496
+    second: Blue Spark_22
+  - first:
+      213: 2276703853586520745
+    second: Blue Spark_23
+  - first:
+      213: 6513076314586339176
+    second: Blue Spark_24
+  - first:
+      213: 1728285540548819784
+    second: Blue Spark_25
+  - first:
+      213: -1691905780209906821
+    second: Blue Spark_26
+  - first:
+      213: -2471802334405257171
+    second: Blue Spark_27
+  - first:
+      213: 7494491751476662986
+    second: Blue Spark_28
+  - first:
+      213: -2065032762019964281
+    second: Blue Spark_29
+  - first:
+      213: 3851229527470568628
+    second: Blue Spark_30
+  - first:
+      213: -3205704085990484113
+    second: Blue Spark_31
+  - first:
+      213: 2568039872962905385
+    second: Blue Spark_32
+  - first:
+      213: 2974827982815005633
+    second: Blue Spark_0
+  - first:
+      213: -4891074929248111945
+    second: Blue Spark_1
+  - first:
+      213: -679146269530984535
+    second: Blue Spark_2
+  - first:
+      213: 7297254393309119575
+    second: Blue Spark_3
+  - first:
+      213: -5787717855083373161
+    second: Blue Spark_4
+  - first:
+      213: 2203437839089703573
+    second: Blue Spark_5
+  - first:
+      213: 4074824103348653994
+    second: Blue Spark_6
+  - first:
+      213: 6183422687227834830
+    second: Blue Spark_7
+  - first:
+      213: -3112053497485156045
+    second: Blue Spark_8
+  - first:
+      213: 462279689036123987
+    second: Blue Spark_9
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blue Spark_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb849ff946b84920800000000000000
+      internalID: 2974827982815005633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Spark_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2f85014496f1cb0800000000000000
+      internalID: -4891074929248111945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Spark_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afe21ee0103396f0800000000000000
+      internalID: -679146269530984535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Spark_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75449dc453e054560800000000000000
+      internalID: 7297254393309119575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Spark_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79dd1938645edafa0800000000000000
+      internalID: -5787717855083373161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Spark_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a98935a0f249e10800000000000000
+      internalID: 2203437839089703573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Spark_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aafcb42ceeeac8830800000000000000
+      internalID: 4074824103348653994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Spark_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec17e404c2eefc550800000000000000
+      internalID: 6183422687227834830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Spark_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 331a26815d3cfc4d0800000000000000
+      internalID: -3112053497485156045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Spark_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f40eb8de85a6600800000000000000
+      internalID: 462279689036123987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -16,7 +16,7 @@ public class CutSceneDictionary : MonoBehaviour {
     public void Start() {
         textDictionary = new List<Pair>();
         AddPair("Parents", "You gay");
-        AddPair("Bell", "No you gay");
+        AddPair("Bel", "No you gay");
         AddPair("Drunk Santa", "I gay");
         size = textDictionary.Count;
     }
