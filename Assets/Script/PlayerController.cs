@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
 	public Animator animator;
 
-	enum PlayerState{Dead, Attack, Move, Idle};
-	private PlayerState currentState;
-
+	public enum PlayerState{Dead, Attack, Jump, Walk};
+	public PlayerState currentState;
 
 	// Stats
 	public int health = 3;
@@ -25,59 +23,27 @@ public class PlayerController : MonoBehaviour
 
 	public float attackRange = 0.5f;
 	public int attackDamage = 5;
-	public int attackCooldown = 12;
-	public int attackDuration = 12;
-
 
 	// Start is called before the first frame update
 	void Start()
 	{
-		currentState = PlayerState.Idle;
+		currentState = PlayerState.Walk;
 	}
 
 	// Update is called once per frame
-	void Update()
+	void Update(){}
+
+	public void PressAttack()
 	{
-
-		switch (currentState)
+		if (currentState == PlayerState.Walk)
 		{
-			case PlayerState.Dead:
-
-			break;
-
-			case PlayerState.Attack:
-			
-			break;
-
-			case PlayerState.Move:
-
-
-			break;
-
-			case PlayerState.Idle:
-
-			break;
-		}
-
-		if (health <= 0)
-		{
-			currentState = PlayerState.Dead;
-		}
-
-		if (Input.GetButtonDown("Attack"))
-		{
+			currentState = PlayerState.Attack;
 			Attack();
 		}
-
-		Jump();
-		Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
-		transform.position += movement * Time.deltaTime * moveSpeed;
 	}
 
-	void Attack()
+	public void Attack()
 	{
-		currentState = PlayerState.Attack;
-
 		// Play an attack animation
 		animator.SetTrigger("Attack");
 
@@ -88,7 +54,44 @@ public class PlayerController : MonoBehaviour
 			enemy.GetComponent<EnemyController>().TakeDamage(attackDamage);
 			Debug.Log("We hit " + enemy.name);
 		}
+
+		currentState = PlayerState.Walk;
 	}
+
+	public void PressJump()
+	{
+		if (currentState == PlayerState.Walk && isGrounded == true)
+		{
+			currentState = PlayerState.Jump;
+			Jump();
+		}
+	}
+
+
+	public void Jump()
+	{
+		gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+	}
+
+	public void PressWalk(Vector3 movement)
+	{
+		if (currentState == PlayerState.Dead || currentState == PlayerState.Attack)
+		{
+			return;
+		}
+		if (currentState == PlayerState.Jump && isGrounded == false)
+		{
+			return;
+		}
+		currentState = PlayerState.Walk;
+		Walk(movement);
+	}
+
+	public void Walk(Vector3 movement)
+	{
+		transform.position += movement * Time.deltaTime * moveSpeed;
+	}
+
 
 	private void OnDrawGizmosSelected()
 	{
@@ -100,12 +103,5 @@ public class PlayerController : MonoBehaviour
 		Gizmos.DrawWireSphere(attackPoint.position, attackRange);
 	}
 
-	void Jump()
-	{
-		if (Input.GetButtonDown("Jump") && isGrounded == true)
-		{
-			gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-			Debug.Log("Jumped");
-		}
-	}
+
 }
