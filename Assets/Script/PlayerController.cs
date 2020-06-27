@@ -73,7 +73,6 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
-
 	public void Jump()
 	{
 		animator.SetTrigger("Jump");
@@ -96,8 +95,8 @@ public class PlayerController : MonoBehaviour
 
 	public void Walk(Vector3 movement)
 	{
-		animator.SetTrigger("JumpEnd");
 		transform.position += movement * Time.deltaTime * moveSpeed;
+
 		// If movement left and facing right
 		if (movement.x < 0f && transform.localScale.x < 0) {
 			transform.localScale = new Vector3(2f, 2f, 2f);
