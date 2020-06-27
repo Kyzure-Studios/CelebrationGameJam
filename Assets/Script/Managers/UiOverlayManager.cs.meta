@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 25589d010fea871449df91c224a83d3d
+guid: 299bf3c755a7e01439b21058dbb9ef5e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - _specialEffectsCanvas: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
