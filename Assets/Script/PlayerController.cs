@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
 	// Movement
 	public float moveSpeed = 5f;
-	public float jumpForce = 10f;
+	public float jumpForce = 30f;
 	public bool isGrounded = false;
 
 	// Combat
@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
 	public LayerMask enemyLayers;
 
 	public float attackRange = 0.5f;
-	public int attackDamage = 5;
+	public int attackDamage = 1;
 
 	// Start is called before the first frame update
 	void Start()
@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
 	// TODO REMOVE MAGIC NO
 	IEnumerator AttackDuration()
 	{
-		yield return new WaitForSeconds(0.2f);
+		yield return new WaitForSeconds(0.14f);
 		animator.SetTrigger("AttackEnd");
 		currentState = PlayerState.Walk;
 	}
@@ -81,14 +81,14 @@ public class PlayerController : MonoBehaviour
 
 	public void PressWalk(Vector3 movement)
 	{
-		if (currentState == PlayerState.Dead || currentState == PlayerState.Attack)
-		{
+		if (currentState == PlayerState.Dead || currentState == PlayerState.Attack) {
 			return;
 		}
-		if (currentState == PlayerState.Jump && isGrounded == false)
-		{
+
+		if (currentState == PlayerState.Jump && isGrounded == false) {
 			return;
 		}
+
 		currentState = PlayerState.Walk;
 		Walk(movement);
 	}

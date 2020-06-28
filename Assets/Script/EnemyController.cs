@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-	public int maxHealth = 10;
+	public Animator animator;
+
+	public int maxHealth = 5;
 	int currentHealth;
 
     // Start is called before the first frame update
@@ -29,7 +31,7 @@ public class EnemyController : MonoBehaviour
 	void Die()
 	{
 		Debug.Log("Enemy died!");
-		// Die animation
+		animator.SetTrigger("Die");
 	}
 
     // Update is called once per frame

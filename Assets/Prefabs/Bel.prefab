@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 944337124132257926}
   - component: {fileID: 944337124132257923}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Bel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -269,7 +269,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 1
   m_AngularDrag: 1
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 944337124132257923}
-  currentState: 0
+  currentState: 3
   health: 3
   moveSpeed: 5
   jumpForce: 10
