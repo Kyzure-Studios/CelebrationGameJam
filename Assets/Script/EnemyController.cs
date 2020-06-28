@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
 	public Animator animator;
+	public CapsuleCollider2D collider;
 
 	public int maxHealth = 5;
 	int currentHealth;
@@ -29,10 +30,11 @@ public class EnemyController : MonoBehaviour
 		}
 	}
 
-	void Die()
+	public virtual void Die()
 	{
 		Debug.Log("Enemy died!");
 		animator.SetTrigger("Die");
+		collider.isTrigger = true;
 	}
 
     // Update is called once per frame

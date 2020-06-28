@@ -176,7 +176,7 @@ PrefabInstance:
     - target: {fileID: 2657506991064056967, guid: f7626182ebdb56f4ba32f4fe588c64a4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2657506991064056967, guid: f7626182ebdb56f4ba32f4fe588c64a4,
         type: 3}
@@ -202,6 +202,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 286776652185675734, guid: 3205ef7402c75bc4e997815a69e1d47a,
+        type: 3}
+      propertyPath: collider
+      value: 
+      objectReference: {fileID: 763957084}
+    - target: {fileID: 3364353872393835445, guid: 3205ef7402c75bc4e997815a69e1d47a,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842369616013592838, guid: 3205ef7402c75bc4e997815a69e1d47a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842369616013592838, guid: 3205ef7402c75bc4e997815a69e1d47a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5842369617031351128, guid: 3205ef7402c75bc4e997815a69e1d47a,
         type: 3}
       propertyPath: m_Name
@@ -215,7 +235,7 @@ PrefabInstance:
     - target: {fileID: 5842369617031351131, guid: 3205ef7402c75bc4e997815a69e1d47a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.54669476
+      value: -2.93
       objectReference: {fileID: 0}
     - target: {fileID: 5842369617031351131, guid: 3205ef7402c75bc4e997815a69e1d47a,
         type: 3}
@@ -443,7 +463,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f7d18c6f6481441ad7e7a62e099168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSparkPrefab: {fileID: 0}
+  hitSparkPrefab: {fileID: 5104414456035979337, guid: 157a950088ac6fa4bacd8e8c1a56a6cb,
+    type: 3}
   timeStop: 0
 --- !u!1 &570163142
 GameObject:
@@ -502,6 +523,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!70 &763957084 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 3364353872393835445, guid: 3205ef7402c75bc4e997815a69e1d47a,
+    type: 3}
+  m_PrefabInstance: {fileID: 251280687}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &787140610
 GameObject:
   m_ObjectHideFlags: 0

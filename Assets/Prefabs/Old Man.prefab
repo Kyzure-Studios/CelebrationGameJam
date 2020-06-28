@@ -136,6 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 3068944080445939557}
+  collider: {fileID: 3068944080445939554}
   maxHealth: 10
 --- !u!95 &3068944080445939557
 Animator:
