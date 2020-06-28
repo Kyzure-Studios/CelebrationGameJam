@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class DoorEvent : MonoBehaviour {
 
-    private bool _isTriggered = false;
+    public bool _isAtDoor = false;
 
     private void OnTriggerStay2D(Collider2D other) {
-        if (Input.GetKeyDown(KeyCode.F) && !_isTriggered) {
-            _isTriggered = true;
-            LevelManager.Instance.FadeToLevel(2);
-        }
+        InputManager.Instance._isAtDoor = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D other) {
+        InputManager.Instance._isAtDoor = false;
     }
 
 }

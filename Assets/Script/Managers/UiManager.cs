@@ -10,12 +10,13 @@ public class UiManager : Manager<UiManager> {
     public GameObject pauseCanvas;
     public GameObject loseCanvas;
     public GameObject jailCanvas;
+    public GameObject statsCanvas;
+    public GameObject blur;
     public GameObject textBox;
     public GameObject health;
 
     public void Start() {
-        textBox = uiCanvas.transform.GetChild(0).gameObject;
-        health = uiCanvas.transform.GetChild(1).gameObject;
+        
     }
 
 

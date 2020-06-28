@@ -9,8 +9,18 @@ public class BossFightManager : MonoBehaviour {
         StartCoroutine(StartLate());
     }
 
+    public void Update() {
+        if (Input.GetKeyDown(KeyCode.K)) {
+            BossFinish();
+        }
+    }
+
+    public void BossFinish() {
+        UiManager.Instance.statsCanvas.SetActive(true);
+    }
+
     IEnumerator StartLate() {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         UiCutSceneManager.Instance.StartCutScene();
     }
 

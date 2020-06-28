@@ -25,10 +25,12 @@ public class UiCutSceneManager : Manager<UiCutSceneManager> {
         if (_currentText >= CutSceneDictionary.size) {
             _isInCutScene = false;
             _textBox.SetActive(false);
+            UiManager.Instance.blur.SetActive(false);
             PauseManager.Instance.StartTime();
         } else if (CutSceneDictionary.textDictionary[_currentText].name == "Skip") {
             _isInCutScene = false;
             _textBox.SetActive(false);
+            UiManager.Instance.blur.SetActive(false);
             PauseManager.Instance.StartTime();
             if (CutSceneDictionary.textDictionary[_currentText].text == "Home") {
                 HomeManager.Instance.ShowFightingControls();
@@ -74,6 +76,7 @@ public class UiCutSceneManager : Manager<UiCutSceneManager> {
         _isInCutScene = true;
         _textBox.SetActive(true);
         GoNextText();
+        UiManager.Instance.blur.SetActive(true);
     }
 
     private void EndCutScene() {

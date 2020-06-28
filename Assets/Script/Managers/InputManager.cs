@@ -8,6 +8,8 @@ public class InputManager : Manager<InputManager>
 	private GameObject _player;
 	private PlayerController _playerController;
 
+	public bool _isAtDoor = false;
+
 
 	// Start is called before the first frame update
 	void Start()
@@ -44,7 +46,12 @@ public class InputManager : Manager<InputManager>
 			if (!LevelManager.Instance.IsInJail()) {
 				PauseManager.Instance.Pause();
 			}
-			
+		}
+
+		if (Input.GetKeyUp(KeyCode.UpArrow)) {
+			if (_isAtDoor) {
+				LevelManager.Instance.FadeToLevel(2);
+			}
 		}
 
 	}
