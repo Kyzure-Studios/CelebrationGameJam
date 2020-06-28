@@ -50,7 +50,7 @@ public class InputManager : Manager<InputManager>
 
 		if (Input.GetKeyUp(KeyCode.UpArrow)) {
 			if (_isAtDoor) {
-				LevelManager.Instance.FadeToLevel(2);
+				LevelManager.Instance.FadeToNextLevel();
 			}
 		}
 

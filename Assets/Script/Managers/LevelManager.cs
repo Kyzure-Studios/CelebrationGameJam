@@ -36,6 +36,10 @@ public class LevelManager : Manager<LevelManager> {
         }
     }
 
+    public void FadeToNextLevel() {
+        FadeToLevel(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
     IEnumerator LateFadeToCurrentLevel() {
         yield return new WaitForSeconds(1f);
         _fadeIn.SetActive(false);
