@@ -9,6 +9,7 @@ public class UiManager : Manager<UiManager> {
     public GameObject uiCanvas;
     public GameObject pauseCanvas;
     public GameObject loseCanvas;
+    public GameObject jailCanvas;
     public GameObject textBox;
     public GameObject health;
 
@@ -26,6 +27,10 @@ public class UiManager : Manager<UiManager> {
                 heart.gameObject.SetActive(false);
             }
         }
+    }
+
+    public void RollJailCredits() {
+        jailCanvas.SetActive(true);
     }
 
 }

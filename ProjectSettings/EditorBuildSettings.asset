@@ -6,12 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/ActualScenes/MainMenu.unity
     guid: 8e6db31f9ab91904d927b3898b3e0435
   - enabled: 1
-    path: Assets/Scenes/Home.unity
+    path: Assets/Scenes/ActualScenes/Home.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/UiOverlay.unity
+    path: Assets/Scenes/ActualScenes/Outside.unity
+    guid: d7074017c6a8d8d4186c63b8eafeb11d
+  - enabled: 1
+    path: Assets/Scenes/ActualScenes/Boss.unity
+    guid: 4546abee25eb0404d987ce54ab210414
+  - enabled: 1
+    path: Assets/Scenes/ActualScenes/Jail.unity
+    guid: 208baf6a7dbfde8458769b09cfde74b8
+  - enabled: 1
+    path: Assets/Scenes/ActualScenes/UiOverlay.unity
     guid: f81ec4f4cde26d5459d63ac5887bffc2
   m_configObjects: {}

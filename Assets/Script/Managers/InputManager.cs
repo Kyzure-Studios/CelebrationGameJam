@@ -41,8 +41,10 @@ public class InputManager : Manager<InputManager>
 		_playerController.PressWalk(movement);
 
 		if (Input.GetKeyDown(KeyCode.Escape)) {
-			print("yeet");
-			PauseManager.Instance.Pause();
+			if (!LevelManager.Instance.IsInJail()) {
+				PauseManager.Instance.Pause();
+			}
+			
 		}
 
 	}

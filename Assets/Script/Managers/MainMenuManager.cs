@@ -17,7 +17,6 @@ public class MainMenuManager : Manager<MainMenuManager> {
 
     public void StartGame() {
         _menu1.SetTrigger("Disappear");
-        print("yeet");
         LevelManager.Instance.FadeToLevel(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

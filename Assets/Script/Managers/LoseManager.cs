@@ -14,9 +14,7 @@ public class LoseManager : Manager<LoseManager> {
     }
 
     public void Update() {
-        if (Input.GetKeyDown(KeyCode.V)) {
-            Lose();
-        }
+        
     }
 
     public void Lose() {

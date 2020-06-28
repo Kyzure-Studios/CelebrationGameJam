@@ -48,6 +48,10 @@ public class LevelManager : Manager<LevelManager> {
         SceneManager.LoadScene(level);
     }
 
+    public bool IsInJail() {
+        return SceneManager.GetActiveScene().buildIndex == 4;
+    }
+
 
     
 
