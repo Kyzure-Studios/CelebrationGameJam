@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 51afeddce491d5645a84b1c7681d91fd
+guid: 70c7697382a73294683a3b41a5b24895
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3921895380733919174
-    second: spr_Bel2_Walk_0
+      213: 1584602433944541784
+    second: BelWalk_0
   - first:
-      213: 8027186510293908405
-    second: spr_Bel2_Walk_1
+      213: -4051619318216763254
+    second: BelWalk_1
   - first:
-      213: -7695002458084329195
-    second: spr_Bel2_Walk_2
+      213: -7989726068035343385
+    second: BelWalk_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -96,7 +96,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spr_Bel2_Walk_0
+      name: BelWalk_0
       rect:
         serializedVersion: 2
         x: 0
@@ -110,14 +110,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a300c192ee0a299c0800000000000000
-      internalID: -3921895380733919174
+      spriteID: 85adb71a483adf510800000000000000
+      internalID: 1584602433944541784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Bel2_Walk_1
+      name: BelWalk_1
       rect:
         serializedVersion: 2
         x: 128
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bb30ebe99b466f60800000000000000
-      internalID: 8027186510293908405
+      spriteID: a88549c42b1c5c7c0800000000000000
+      internalID: -4051619318216763254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Bel2_Walk_2
+      name: BelWalk_2
       rect:
         serializedVersion: 2
         x: 256
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5193024c80cd53590800000000000000
-      internalID: -7695002458084329195
+      spriteID: 7eb2316f87ace1190800000000000000
+      internalID: -7989726068035343385
       vertices: []
       indices: 
       edges: []
