@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SanataController : MonoBehaviour
+public class SantaController : MonoBehaviour
 {
 	public Animator animator;
 
