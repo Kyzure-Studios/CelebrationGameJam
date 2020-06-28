@@ -24,6 +24,9 @@ public class PlayerController : MonoBehaviour
 	public float attackRange = 0.5f;
 	public int attackDamage = 1;
 
+	// Bell's size
+	private float bellScale = 4f;
+
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -99,11 +102,11 @@ public class PlayerController : MonoBehaviour
 
 		// If movement left and facing right
 		if (movement.x < 0f && transform.localScale.x < 0) {
-			transform.localScale = new Vector3(2f, 2f, 2f);
+			transform.localScale = new Vector3(bellScale, bellScale, bellScale);
 		}
 		// If movement right and facing left
 		if (movement.x > 0f && transform.localScale.x > 0) {
-			transform.localScale = new Vector3(-2f, 2f, 2f);
+			transform.localScale = new Vector3(-bellScale, bellScale, bellScale);
 		}
 	}
 

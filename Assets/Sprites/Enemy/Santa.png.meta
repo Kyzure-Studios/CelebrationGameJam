@@ -5,6 +5,15 @@ TextureImporter:
   - first:
       213: 3955740310808264383
     second: Santa_0
+  - first:
+      213: 2393211132166736721
+    second: Santa_0
+  - first:
+      213: 8564775888813304432
+    second: Santa_1
+  - first:
+      213: -1532199066618313322
+    second: Santa_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -48,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -95,7 +104,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 384
+        width: 128
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -104,8 +113,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbe7b61badc95e630800000000000000
-      internalID: 3955740310808264383
+      spriteID: 15b0f4d48d4663120800000000000000
+      internalID: 2393211132166736721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Santa_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a2c81fa423cd670800000000000000
+      internalID: 8564775888813304432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Santa_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695c70d11198cbae0800000000000000
+      internalID: -1532199066618313322
       vertices: []
       indices: 
       edges: []
