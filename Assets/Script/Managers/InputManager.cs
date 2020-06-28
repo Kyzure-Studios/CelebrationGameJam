@@ -21,7 +21,7 @@ public class InputManager : Manager<InputManager>
 	void Update()
 	{
 
-		if (Input.GetButtonDown("Attack"))
+		if (Input.GetButtonDown("Attack") && !UiCutSceneManager.Instance.GetIsInCutScene())
 		{
 			Debug.Log("Attack pressed");
 
@@ -29,7 +29,7 @@ public class InputManager : Manager<InputManager>
 			return;
 		}
 
-		if (Input.GetButtonDown("Jump"))
+		if (Input.GetButtonDown("Jump") && !UiCutSceneManager.Instance.GetIsInCutScene())
 		{
 			Debug.Log("Jump pressed.");
 

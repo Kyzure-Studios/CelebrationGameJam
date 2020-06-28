@@ -12,7 +12,7 @@ public class LevelManager : Manager<LevelManager> {
     private Animator _fadeOutAnimator;
 
     private bool _isFading = false;
-
+    
     void Start() {
         _fadeIn = _specialEffectsCanvas.transform.GetChild(0).gameObject;
         _fadeOut = _specialEffectsCanvas.transform.GetChild(1).gameObject;
@@ -50,6 +50,14 @@ public class LevelManager : Manager<LevelManager> {
 
     public bool IsInJail() {
         return SceneManager.GetActiveScene().buildIndex == 4;
+    }
+
+    public bool IsInHome() {
+        return SceneManager.GetActiveScene().buildIndex == 1;
+    }
+
+    public bool IsInAlley() {
+        return SceneManager.GetActiveScene().buildIndex == 3;
     }
 
 

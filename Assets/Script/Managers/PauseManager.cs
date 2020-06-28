@@ -24,4 +24,12 @@ public class PauseManager : Manager<PauseManager> {
         }
     }
 
+    public void StopTime() {
+        Time.timeScale = 0f;
+    }
+
+    public void StartTime() {
+        Time.timeScale = _originalTime;
+    }
+
 }

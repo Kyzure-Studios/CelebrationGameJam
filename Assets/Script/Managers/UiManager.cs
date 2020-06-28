@@ -18,6 +18,7 @@ public class UiManager : Manager<UiManager> {
         health = uiCanvas.transform.GetChild(1).gameObject;
     }
 
+
     public void UpdateHealth(int hp) {
         foreach (Transform heart in health.transform) {
             if (hp > 0) {
@@ -27,10 +28,6 @@ public class UiManager : Manager<UiManager> {
                 heart.gameObject.SetActive(false);
             }
         }
-    }
-
-    public void RollJailCredits() {
-        jailCanvas.SetActive(true);
     }
 
 }

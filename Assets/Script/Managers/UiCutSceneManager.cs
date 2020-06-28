@@ -25,9 +25,16 @@ public class UiCutSceneManager : Manager<UiCutSceneManager> {
         if (_currentText >= CutSceneDictionary.size) {
             _isInCutScene = false;
             _textBox.SetActive(false);
+            PauseManager.Instance.StartTime();
         } else if (CutSceneDictionary.textDictionary[_currentText].name == "Skip") {
             _isInCutScene = false;
             _textBox.SetActive(false);
+            PauseManager.Instance.StartTime();
+            if (CutSceneDictionary.textDictionary[_currentText].text == "Home") {
+                HomeManager.Instance.ShowFightingControls();
+            } else {
+                // TODO: Add Alley event
+            }
             _currentText++;
         } else {
             ChangeText(CutSceneDictionary.textDictionary[_currentText].name, 
@@ -62,12 +69,19 @@ public class UiCutSceneManager : Manager<UiCutSceneManager> {
         }
     }
 
-    private void StartCutScene() {
+    public void StartCutScene() {
+        PauseManager.Instance.StopTime();
         _isInCutScene = true;
+        _textBox.SetActive(true);
+        GoNextText();
     }
 
     private void EndCutScene() {
         _isInCutScene = false;
+    }
+
+    public bool GetIsInCutScene() {
+        return _isInCutScene;
     }
 
 }
