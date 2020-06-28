@@ -20,6 +20,7 @@ public class EnemyController : MonoBehaviour
 		currentHealth -= damage;
 
 		// Play hurt animation
+		GetComponent<AudioSource>().Play();
 		HitStopManager.Instance.PlayHitSpark(this.transform);
 
 		if (currentHealth <= 0)
